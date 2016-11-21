@@ -14,4 +14,14 @@ public class VerifyPage {
 				signin.tearDown();
 				
 			}
+			//@parmesh
+			@Test
+			public void Loginverification(){
+				
+				LoginPage login = new LoginPage();
+				login.intializeWebDriver();
+				login.login();
+				login.tearDown();
+			}
+			
 }
