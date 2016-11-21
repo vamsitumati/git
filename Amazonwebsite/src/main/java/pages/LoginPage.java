@@ -29,4 +29,13 @@ public class LoginPage extends WebDriverFactory {
 		  getDriver().findElement(By.id("ap_password")).sendKeys("123456");
 		  getDriver().findElement(By.id("signInSubmit")).click();
 	  }
+	  
+	  //@vinod
+	  public void invalidLoginPage_vinod() {
+	    	getDriver().findElement(By.xpath(".//*[@id='nav-link-yourAccount']/span[1]")).click();
+			getDriver().findElement(By.id("ap_email")).sendKeys("vinod");
+			getDriver().findElement(By.xpath(".//*[@id='ap_password']")).sendKeys("MLOVE.ucm");
+			getDriver().findElement(By.id("signInSubmit")).click();
+	    }	    
+	  
 }

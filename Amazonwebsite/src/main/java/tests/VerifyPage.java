@@ -33,5 +33,15 @@ public class VerifyPage {
 					login.tearDown();
 					
 				}
-			
+			  
+			//vinod
+			  @Test
+				public void loginVerification_vinod()
+				{
+					LoginPage login=new LoginPage();
+					login.intializeWebDriver();
+					login.invalidLoginPage_vinod();
+					login.tearDown();
+					
+				}
 }
