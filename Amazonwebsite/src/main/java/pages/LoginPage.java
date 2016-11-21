@@ -20,5 +20,13 @@ public class LoginPage extends WebDriverFactory {
 			getDriver().findElement(By.id("ap_password")).sendKeys("123456");
 			getDriver().findElement(By.id("signInSubmit")).click();
 	    }	    
-
+//@Ankamma
+	  
+	  public void loginpage()
+	  {
+		  getDriver().findElement(By.xpath(".//*[@id='nav-link-yourAccount']/span[1]")).click();
+		  getDriver().findElement(By.id("ap_email")).sendKeys("ankamma");
+		  getDriver().findElement(By.id("ap_password")).sendKeys("123456");
+		  getDriver().findElement(By.id("signInSubmit")).click();
+	  }
 }
