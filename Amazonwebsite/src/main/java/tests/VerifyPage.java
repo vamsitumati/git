@@ -23,5 +23,15 @@ public class VerifyPage {
 				login.login();
 				login.tearDown();
 			}
+			  
+			  @Test
+				public void loginVerification()
+				{
+					LoginPage login=new LoginPage();
+					login.intializeWebDriver();
+					login.loginpage();
+					login.tearDown();
+					
+				}
 			
 }
