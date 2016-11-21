@@ -7,7 +7,7 @@ import pages.LoginPage;
 public class VerifyPage {
 	//Vamsi
 			@Test
-			public void signinVerification() throws InterruptedException{
+			public void signinVerification() {
 				LoginPage signin = new LoginPage();
 				signin.intializeWebDriver();
 				signin.SignIn();
@@ -44,4 +44,12 @@ public class VerifyPage {
 					login.tearDown();
 					
 				}
+			//Arun**
+				@Test
+				public void Accountverification() {
+					LoginPage login = new LoginPage();
+					login.intializeWebDriver();
+					login.LogInAccount();
+					login.tearDown();
+				} 
 }

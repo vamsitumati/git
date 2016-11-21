@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 
 public class LoginPage extends WebDriverFactory {
 	
-	  public void SignIn() throws InterruptedException{
+	  public void SignIn() {
 		  
 		  getDriver().findElement(By.xpath(".//*[@id='nav-signin-tooltip']/a/span")).click();
 		  getDriver().findElement(By.xpath(".//input[@id='ap_email'][@name='email']")).sendKeys("VamsiTuamti");
@@ -36,6 +36,13 @@ public class LoginPage extends WebDriverFactory {
 			getDriver().findElement(By.id("ap_email")).sendKeys("vinod");
 			getDriver().findElement(By.xpath(".//*[@id='ap_password']")).sendKeys("MLOVE.ucm");
 			getDriver().findElement(By.id("signInSubmit")).click();
-	    }	    
-	  
+	    }	
+	  //@arun
+	  public void LogInAccount(){
+
+		  getDriver().findElement(By.cssSelector(".nav-action-inner")).click();
+		  getDriver().findElement(By.id("ap_email")).sendKeys("arun");
+		  getDriver().findElement(By.id("ap_password")).sendKeys("qwerty22");
+		  getDriver().findElement(By.className("a-button-input")).click();
+	  }
 }
