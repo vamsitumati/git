@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="28730" started-at="2016-11-21T17:32:31Z" finished-at="2016-11-21T17:33:00Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="28730" started-at="2016-11-21T17:32:31Z" finished-at="2016-11-21T17:33:00Z">
+      <class name="tests.VerifyPage">
+        <test-method status="PASS" signature="signinVerification()[pri:0, instance:tests.VerifyPage@12843fce]" name="signinVerification" duration-ms="28613" started-at="2016-11-21T12:32:31Z" finished-at="2016-11-21T12:33:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signinVerification -->
+      </class> <!-- tests.VerifyPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
