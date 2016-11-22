@@ -7,23 +7,63 @@ import org.openqa.selenium.interactions.Actions;
 
 public class LoginPage extends WebDriverFactory {
 	
-	  public void SignIn() throws InterruptedException{
+	  public void SignIn() {
 		  
 		  getDriver().findElement(By.xpath(".//*[@id='nav-signin-tooltip']/a/span")).click();
 		  getDriver().findElement(By.xpath(".//input[@id='ap_email'][@name='email']")).sendKeys("VamsiTuamti");
 		  getDriver().findElement(By.xpath(".//input[@id='ap_password'][@name='password']")).sendKeys("654321");
 		  getDriver().findElement(By.xpath(".//input[@id='signInSubmit'][@type='submit']"));
 	  }
-	  public void Log() throws InterruptedException{
+
+	  
+		
+
+	  
+		//@parmesh
+	  public void login() {
+	    	getDriver().findElement(By.xpath(".//*[@id='nav-link-yourAccount']/span[1]")).click();
+			getDriver().findElement(By.xpath(".//*[@id='ap_email']")).sendKeys("kpr544");
+			getDriver().findElement(By.id("ap_password")).sendKeys("123456");
+			getDriver().findElement(By.id("signInSubmit")).click();
+	    }	    
+//@Ankamma
+	  
+	  public void loginpage()
+	  {
+		  getDriver().findElement(By.xpath(".//*[@id='nav-link-yourAccount']/span[1]")).click();
+		  getDriver().findElement(By.id("ap_email")).sendKeys("ankamma");
+		  getDriver().findElement(By.id("ap_password")).sendKeys("123456");
+		  getDriver().findElement(By.id("signInSubmit")).click();
+	  }
+	  
+	  //@vinod
+	  public void invalidLoginPage_vinod() {
+	    	getDriver().findElement(By.xpath(".//*[@id='nav-link-yourAccount']/span[1]")).click();
+			getDriver().findElement(By.id("ap_email")).sendKeys("vinod");
+			getDriver().findElement(By.xpath(".//*[@id='ap_password']")).sendKeys("MLOVE.ucm");
+			getDriver().findElement(By.id("signInSubmit")).click();
+	    }	
+	  //@arun
+	  public void LogInAccount(){
+
+		  getDriver().findElement(By.cssSelector(".nav-action-inner")).click();
+		  getDriver().findElement(By.id("ap_email")).sendKeys("arun");
+		  getDriver().findElement(By.id("ap_password")).sendKeys("qwerty22");
+		  getDriver().findElement(By.className("a-button-input")).click();
+	  }
+//>>>>>>> branch 'vamsi' of ssh://git@github.com/vamsitumati/git.git
+	  
+	  //kishan
+	public void Handler(){
 		  Actions action = new Actions(getDriver());
 		  WebElement we = getDriver().findElement(By.xpath(".//*[@id='nav-link-accountList']"));
 		  action.moveToElement(we).build().perform();
-		  Thread.sleep(4000);
+		 
 		  getDriver().findElement(By.xpath(".//*[@id='nav-flyout-ya-signin']/a/span")).click();
-		  Thread.sleep(4000);
-      	  getDriver().findElement(By.cssSelector("#ap_email")).sendKeys("kishantej");
+		
+    	  getDriver().findElement(By.cssSelector("#ap_email")).sendKeys("kishantej");
 		  getDriver().findElement(By.xpath(".//input[@id='ap_password'][@name='password']")).sendKeys("8164054060");
 		  getDriver().findElement(By.xpath(".//input[@id='signInSubmit'][@type='submit']"));
-		
+	  
 	  }
 }
